@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OpportunityNeedAccount</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+	ISNEW(),
+	ISBLANK( AccountId )
+)</errorConditionFormula>
+    <errorDisplayField>AccountId</errorDisplayField>
+    <errorMessage>Uma oportunidade precisa de uma conta para ser criada.</errorMessage>
+</ValidationRule>

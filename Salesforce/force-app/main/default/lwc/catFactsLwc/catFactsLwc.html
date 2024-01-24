@@ -1,0 +1,33 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <article class="slds-card">
+        <div class="slds-page-header slds-page-header_record-home">
+            <div class="slds-page-header__col-title">
+                <div class="slds-media title-position">
+                    <div class="slds-page-header__row">
+                        <div class="slds-media__figure">
+                            <lightning-icon icon-name="action:info" size="small" ></lightning-icon>
+                        </div>
+                        <div class="slds-page-header__name">
+                            <div class="slds-page-header__name-title">
+                                <h1>
+                                    <span class="slds-card__header-title slds-truncate"> 
+                                        <a class="slds-card__header-link slds-truncate"> Fatos Sobre Gatos </a>
+                                    </span>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="slds-card__footer" style="margin: 0 0 0 0; padding: inherit;">
+            <div style="margin-top: -12px; padding-top: 12px;">
+                <div class="slds-m-around_large">
+                    <lightning-formatted-text class="slds-text-align_left" value={fact}></lightning-formatted-text>
+                    <lightning-button class="slds-m-left_small slds-text-align_right" variant="brand" label="New" onclick={handleClick} disabled={disable}></lightning-button>
+                </div>
+            </div>
+        </footer>
+    </article>
+</template>

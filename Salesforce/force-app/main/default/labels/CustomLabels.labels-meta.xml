@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Opportunity1</fullName>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>Nome da Oportunidade 1</shortDescription>
+        <value>Oportunidade 1</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity2</fullName>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>Nome da Oportunidade 2</shortDescription>
+        <value>Oportunidade 2</value>
+    </labels>
+</CustomLabels>

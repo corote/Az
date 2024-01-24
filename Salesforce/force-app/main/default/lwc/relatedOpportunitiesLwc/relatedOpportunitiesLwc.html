@@ -1,0 +1,43 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <article class="slds-card">
+        <div class="slds-page-header slds-page-header_record-home">
+            <div class="slds-page-header__col-title">
+                <div class="slds-media" style="margin-bottom: -7px;">
+                    <div class="slds-page-header__row">
+                        <div class="slds-media__figure">
+                            <lightning-icon icon-name="standard:opportunity" size="small" alternative-text="Oportunidades" title="Oportunidades"></lightning-icon>
+                        </div>
+                        <div class="slds-page-header__name">
+                            <h1>
+                                <span class="slds-card__header-title slds-truncate" title="Oportunidades"> 
+                                    <a class="slds-card__header-link slds-truncate" onclick={handleClick}> Oportunidades ({size}) </a>
+                                </span>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="slds-no-flex" style="margin-left: auto;">
+                        <lightning-button label="Criar" title="Criar"></lightning-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <template if:true={showFooter}>
+            <footer class="slds-card__footer" style="margin: 0 0 0 0; padding: inherit;">
+                <div style="margin-top: -12px; padding-top: 12px;">
+                    <lightning-datatable
+                        key-field="Id"
+                        columns={columns}
+                        data={data}
+                        onrowaction={handleRowAction}
+                        hide-checkbox-column="true"
+                        resize-column-disabled="true"
+                    ></lightning-datatable>
+                </div>
+            </footer>
+            <footer class="slds-card__footer" style="margin-top: -1px;">
+                <a class="slds-card__footer-action" onclick={handleClick}> Exibir tudo </a>
+            </footer>
+        </template>
+    </article>
+</template>
